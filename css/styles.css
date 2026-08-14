@@ -360,6 +360,15 @@ details[open] summary::after { content: "−"; }
 .credit-freeze-card { background: var(--teal-soft); border: 1px solid #bfe8e2; border-radius: var(--radius-lg); padding: 28px; display: flex; gap: 24px; align-items: center; justify-content: space-between; }
 .credit-freeze-card h3 { font-family: Georgia, serif; color: var(--navy); font-size: 1.65rem; margin: .25rem 0 .45rem; }
 .credit-freeze-card p { color: #4d6663; margin-bottom: 0; }
+.credit-link-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 20px; }
+.credit-agency-link { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 13px 14px; border: 2px solid #d7c17e; border-radius: 12px; background: #fff; color: var(--navy); text-decoration: none; box-shadow: 0 4px 10px rgba(109, 78, 14, .06); transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease; }
+.credit-agency-link:hover,
+.credit-agency-link:focus-visible { transform: translateY(-2px); border-color: #a87916; box-shadow: 0 8px 18px rgba(109, 78, 14, .12); }
+.credit-agency-link strong,
+.credit-agency-link small { display: block; }
+.credit-agency-link small { margin-top: 2px; color: var(--muted); font-size: .76rem; }
+.credit-agency-link > span:last-child { color: #80580f; font-size: 1.1rem; font-weight: 900; }
+.credit-report-link { grid-column: 1 / -1; background: var(--gold-soft); }
 
 .help-section { background: linear-gradient(135deg, #201844, #312462); color: #fff; }
 .resource-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
@@ -422,7 +431,7 @@ a.resource-card:hover { transform: translateY(-2px); border-color: #b7adf4; }
   .section-number { font-size: 3.1rem; }
   .section-icon { width: 50px; height: 50px; }
   .section-heading h2 { font-size: 2.2rem; }
-  .quick-grid, .three-cards, .four-cards, .two-wide, .two-columns, .privacy-layout, .resource-grid, .horizontal-steps, .verify-grid, .malware-grid { grid-template-columns: 1fr; }
+  .quick-grid, .three-cards, .four-cards, .two-wide, .two-columns, .privacy-layout, .resource-grid, .horizontal-steps, .verify-grid, .malware-grid, .credit-link-grid { grid-template-columns: 1fr; }
   .quick-card { border-left: 1px solid var(--line); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .tab-list { grid-template-columns: 1fr; }
   .tab-list button { border-bottom: 1px solid var(--line); }
