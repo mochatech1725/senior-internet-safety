@@ -1,13 +1,15 @@
-# Senior Internet Safety
+# Click with Confidence
 
 A static multi-page website for Cloudflare Pages.
 
 ## Content source
 The educational content on the topic pages is based on the current `Internet Safety.pptx` presentation. The website reorganizes the presentation into separate pages but is intended to stay close to the presentation wording.
 
+The site title and tagline come from slide 1 of the presentation:
+- Site name: **Click with Confidence**
+- Tagline: **Online Safety for Seniors in the Digital Age**
+
 Intentional website-only text:
-- Site name: **Senior Internet Safety**
-- Tagline: **A Practical Guide to Staying Secure Online**
 - Navigation labels and short structural headings needed for the website
 - The **Gold Award** page, which was specifically requested as a brief placeholder for the Girl Scout to personalize later
 

@@ -9,15 +9,19 @@
     if (!header) return;
 
     header.outerHTML = `
-      <header class="site-header" id="top">
+      <div class="site-banner" id="top">
+        <a href="index.html"><img alt="Click with Confidence — Online Safety for Seniors in the Digital Age" src="images/CickWithConfidenceBanner.png"/></a>
+      </div>
+      <header class="site-header">
         <div class="nav-shell">
           <button aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation" class="menu-button" type="button"><span aria-hidden="true">☰</span></button>
           <nav aria-label="Main navigation" class="site-nav" id="site-nav">
             <a${pageAttribute('index.html')} href="index.html">Home</a>
-            <details class="${groupClass(['scams.html', 'web-safety.html', 'social-mobile.html'])}">
+            <details class="${groupClass(['scams.html', 'deepfakes.html', 'web-safety.html', 'social-mobile.html'])}">
               <summary class="nav-group-label">Safety Topics <span aria-hidden="true" class="nav-arrow">⌄</span></summary>
               <div class="nav-dropdown">
-                <a${pageAttribute('scams.html')} href="scams.html">Scams &amp; Deepfakes</a>
+                <a${pageAttribute('scams.html')} href="scams.html">Scams &amp; Social Engineering</a>
+                <a${pageAttribute('deepfakes.html')} href="deepfakes.html">Deep Fakes &amp; Impersonation</a>
                 <a${pageAttribute('web-safety.html')} href="web-safety.html">Web Safety &amp; Malware</a>
                 <a${pageAttribute('social-mobile.html')} href="social-mobile.html">Social Media &amp; Mobile</a>
               </div>
