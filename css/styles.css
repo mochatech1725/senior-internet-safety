@@ -2304,3 +2304,133 @@ body:not(.inner-page) main p,
 .story-grid p,
 .story-grid .lead,
 body:not(.inner-page) .lead { max-width: none; }
+
+/* Website red flags, each in its own faint box. */
+.flag-examples { display: grid; gap: 16px; margin: 0 0 12px; }
+.flag-item {
+  background: var(--box-bg);
+  border: 1px solid var(--line);
+  padding: 18px 20px;
+}
+.flag-item h3 {
+  margin: 0 0 .5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+.flag-item p { margin: 0 0 .5rem; }
+.flag-item p:last-child { margin-bottom: 0; }
+
+/* Mock address bar so the padlock is visible. */
+.addr-bar {
+  display: inline-block;
+  padding: 7px 12px;
+  border: 1px solid #c8ccd4;
+  background: #fff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .92rem;
+  overflow-wrap: anywhere;
+}
+.addr-good { border-color: #9fc6bf; }
+.addr-bad { border-color: #e0b3b3; color: var(--red); }
+.addr-note { font-weight: 700; font-size: .9rem; }
+.addr-note-good { color: var(--teal); }
+.addr-note-bad { color: var(--red); }
+.flag-examples code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .95em;
+  overflow-wrap: anywhere;
+}
+.url-bad { color: var(--red); font-weight: 700; }
+.url-good { color: var(--teal); font-weight: 700; }
+
+/* Faint background on the shared text boxes. */
+:root { --box-bg: #f7f9fb; }
+.panel,
+.info-card,
+.callout,
+.privacy-card,
+.romance-card,
+.red-flag-panel,
+.malware-grid article,
+.verify-grid article,
+.horizontal-steps li,
+.score-grid div,
+.wifi-actions div,
+.credit-freeze-card,
+.password-scorecard,
+.breach-card,
+.wifi-banner,
+.response-card,
+.deepfake-story,
+.help-reminder,
+.next-topic-card,
+.resource-callout,
+.topic-link-card,
+.example-card,
+.inner-page main .panel,
+.inner-page main .info-card {
+  background: var(--box-bg);
+}
+
+/* Illustration of a fake tech-support pop-up. */
+.fake-popup-figure { margin: 14px 0; max-width: 520px; }
+.fake-popup-figure figcaption {
+  margin-bottom: 6px;
+  font-size: .84rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+.fake-popup { border: 1px solid #b9bfc8; background: #fff; }
+.fake-popup-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: #2c3e50;
+  color: #fff;
+  font-size: .88rem;
+  font-weight: 700;
+}
+.fake-popup-close { opacity: .7; }
+.fake-popup-body { padding: 16px 18px; font-size: .92rem; }
+.fake-popup-body p { margin: 0 0 .6rem; }
+.fake-popup-alarm {
+  color: var(--red);
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+.fake-field {
+  margin: 0 0 8px;
+  padding: 8px 10px;
+  border: 1px solid #c3c8d0;
+  background: #fbfbfc;
+  color: #8a9099;
+  font-size: .88rem;
+}
+.fake-command {
+  margin: 0 0 .7rem;
+  padding: 9px 11px;
+  background: #1e242c;
+  color: #d8dee6;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .85rem;
+  overflow-wrap: anywhere;
+}
+.fake-command-note { color: #8f98a3; }
+.fake-popup-body kbd {
+  padding: 1px 6px;
+  border: 1px solid #b9bfc8;
+  background: #f2f3f5;
+  font-family: inherit;
+  font-size: .85em;
+}
+.fake-popup-buttons { margin: 0; }
+.fake-button {
+  display: inline-block;
+  padding: 9px 14px;
+  background: var(--red);
+  color: #fff;
+  font-weight: 700;
+  font-size: .9rem;
+}

@@ -17,14 +17,84 @@
 <section aria-labelledby="web-title" class="section">
 <div class="shell">
 <div class="section-heading"><p class="eyebrow teal">Website Security</p><h2 id="web-title">Unsecure Website Red Flags</h2></div>
-<div class="content-grid two-wide">
-<article class="panel panel-red">
-<ul class="check-list warning-list">
-<li>Unusual URL.</li><li>Http instead of Https.</li><li>No padlock in search bar.</li><li>Mimics a well-known site.</li><li>Misspelled words.</li><li>No contact information. Legitimate companies typically have a “Contact Us” or an “About Us” page.</li><li>Warning notifications. Do NOT bypass your device’s security warnings by proceeding.</li><li>Pop-ups.</li>
-</ul>
-</article>
-<article class="panel panel-violet"><h3>Misspellings on the site</h3><p>Scammers often make careless mistakes like typos or misspellings.</p></article>
+<div class="flag-examples">
+
+<div class="flag-item">
+<h3>Unusual URL</h3>
+<p>The real site is <code class="url-good">amazon.com</code>, but the address reads <code class="url-bad">amaz0n-deals.example.net</code>. The letter “o” has been replaced with a zero.</p>
 </div>
+
+<div class="flag-item">
+<h3>Http instead of Https</h3>
+<p>The “s” stands for secure. Without it, anything you type can be read by someone else on the network.</p>
+<p><span class="addr-bar addr-good">🔒 https://<strong>www.amazon.com</strong></span> <span class="addr-note addr-note-good">Safe</span></p>
+<p><span class="addr-bar addr-bad">Not secure | http://<strong>yourbank-login.example.net</strong></span> <span class="addr-note addr-note-bad">Stop</span></p>
+</div>
+
+<div class="flag-item">
+<h3>No padlock in search bar</h3>
+<p>A secure site shows a small closed padlock just to the left of the address, like this:</p>
+<p><span class="addr-bar addr-good">🔒 https://<strong>www.irs.gov</strong></span></p>
+<p>If the padlock is missing, or the browser says “Not secure,” do not type in a password, a card number, or any personal information.</p>
+</div>
+
+<div class="flag-item">
+<h3>Mimics a well-known site</h3>
+<p><code class="url-bad">paypal.com</code>.secure-login.example.net — the real site is whatever comes right before the first single slash, so this is <strong>example.net</strong>, not PayPal.</p>
+</div>
+
+<div class="flag-item">
+<h3>Misspelled words</h3>
+<p>Scammers often make careless mistakes like typos or misspellings.</p>
+<p>“Dear <strong>Costumer</strong>, your <strong>acount</strong> has been <strong>suspened</strong>. Click here to <strong>reactivat</strong> it.” A real company proofreads its site and its emails.</p>
+</div>
+
+<div class="flag-item">
+<h3>No contact information</h3>
+<p>Legitimate companies typically have a “Contact Us” or an “About Us” page.</p>
+<p>A fake store may list only a web form, a free email address such as <code class="url-bad">support1234@gmail.com</code>, or nothing at all — no phone number, no mailing address, no company name.</p>
+</div>
+
+<div class="flag-item">
+<h3>Warning notifications</h3>
+<p>Do NOT bypass your device’s security warnings by proceeding.</p>
+<p>If your browser shows “Your connection is not private” or “This site may harm your computer,” close the tab. Do not click “Advanced” or “Proceed anyway.”</p>
+</div>
+
+<div class="flag-item">
+<h3>Pop-ups</h3>
+<p>A window claiming “Your computer is infected! Call this number now” is itself the scam. No real company scans your computer through a web page.</p>
+<p>Close the window, or close the browser entirely. Never call the number it gives you.</p>
+
+<figure class="fake-popup-figure">
+<figcaption>Example of a fake pop-up. This is an illustration, not a real warning.</figcaption>
+<div aria-hidden="true" class="fake-popup">
+<div class="fake-popup-bar">Windows Security Alert <span class="fake-popup-close">✕</span></div>
+<div class="fake-popup-body">
+<p class="fake-popup-alarm">Your computer has been blocked!</p>
+<p>Trojan spyware was detected on this device. Your banking logins and passwords are at risk. Do NOT shut down your computer.</p>
+<p><strong>Step 1.</strong> Verify your identity to unlock this device:</p>
+<div class="fake-field">Microsoft account password</div>
+<div class="fake-field">Card number for verification</div>
+<p><strong>Step 2.</strong> Press the <kbd>Windows</kbd> + <kbd>R</kbd> keys, paste this, and press Enter:</p>
+<div class="fake-command">powershell -Command "…" <span class="fake-command-note">[command not shown]</span></div>
+<p class="fake-popup-buttons"><span class="fake-button">Call Support Now: 1-888-555-0142</span></p>
+</div>
+</div>
+</figure>
+
+<p><strong>Everything in that window is a trick.</strong> Here is what gives it away:</p>
+<ul class="check-list warning-list">
+<li>It asks you to <strong>type in a password or card number</strong>. A real security warning never asks for either.</li>
+<li>It tells you to <strong>press keys and paste in a command</strong>. That command installs the very thing the window claims to be removing. Never paste something a website hands you.</li>
+<li>It says <strong>do not shut down</strong> and gives a phone number. Both exist to keep you rattled and get you on the phone with the scammer.</li>
+<li>A web page <strong>cannot scan your computer</strong>. Microsoft, Apple, and your bank will never warn you this way.</li>
+</ul>
+<p>If you see this, close the browser. If the window will not close, shut the computer down and start it up again. Then run a scan with the security software already on your device.</p>
+</div>
+
+</div>
+<p class="small-note">The web addresses above are made up for these examples. Do not type them into your browser.</p>
 </div>
 <div class="shell">
 <div class="section-heading compact-heading"><p class="eyebrow teal">Visual examples</p><h2>Example website warning signs</h2><p>These examples show how a suspicious site can look.</p></div>
