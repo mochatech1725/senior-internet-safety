@@ -1,4 +1,57 @@
 (() => {
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+  const pageAttribute = page => currentPage === page ? ' aria-current="page"' : '';
+  const groupClass = pages => pages.includes(currentPage) ? 'nav-group active-group' : 'nav-group';
+
+  const renderSiteHeader = () => {
+    const header = document.querySelector('[data-site-header]');
+    if (!header) return;
+
+    header.outerHTML = `
+      <header class="site-header" id="top">
+        <div class="nav-shell">
+          <button aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation" class="menu-button" type="button"><span aria-hidden="true">☰</span></button>
+          <nav aria-label="Main navigation" class="site-nav" id="site-nav">
+            <a${pageAttribute('index.html')} href="index.html">Home</a>
+            <details class="${groupClass(['scams.html', 'web-safety.html', 'social-mobile.html'])}">
+              <summary class="nav-group-label">Safety Topics <span aria-hidden="true" class="nav-arrow">⌄</span></summary>
+              <div class="nav-dropdown">
+                <a${pageAttribute('scams.html')} href="scams.html">Scams &amp; Deepfakes</a>
+                <a${pageAttribute('web-safety.html')} href="web-safety.html">Web Safety &amp; Malware</a>
+                <a${pageAttribute('social-mobile.html')} href="social-mobile.html">Social Media &amp; Mobile</a>
+              </div>
+            </details>
+            <details class="${groupClass(['protect-yourself.html', 'data-breaches.html'])}">
+              <summary class="nav-group-label">Protect Yourself <span aria-hidden="true" class="nav-arrow">⌄</span></summary>
+              <div class="nav-dropdown">
+                <a${pageAttribute('protect-yourself.html')} href="protect-yourself.html">Password Protection</a>
+                <a${pageAttribute('data-breaches.html')} href="data-breaches.html">Data Breaches &amp; Credit Protection</a>
+              </div>
+            </details>
+            <a${pageAttribute('get-help.html')} href="get-help.html">Get Help</a>
+            <a${pageAttribute('gold-award.html')} href="gold-award.html">Gold Award</a>
+          </nav>
+        </div>
+      </header>`;
+  };
+
+  const renderSiteFooter = () => {
+    const footer = document.querySelector('[data-site-footer]');
+    if (!footer) return;
+
+    footer.outerHTML = `
+      <footer class="site-footer">
+        <div class="shell footer-grid">
+          <div><p class="footer-small">A Girl Scout Gold Award project.</p></div>
+          <div class="footer-links"><a href="#top">Back to top ↑</a><button id="print-page" type="button">Print this page</button></div>
+        </div>
+      </footer>`;
+  };
+
+  renderSiteHeader();
+  renderSiteFooter();
+
   // Mobile navigation
   const menuButton = document.querySelector('.menu-button');
   const nav = document.querySelector('#site-nav');
