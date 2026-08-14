@@ -17,6 +17,7 @@
           <button aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation" class="menu-button" type="button"><span aria-hidden="true">☰</span></button>
           <nav aria-label="Main navigation" class="site-nav" id="site-nav">
             <a${pageAttribute('index.html')} href="index.html">Home</a>
+            <a${pageAttribute('topics.html')} href="topics.html">Topics</a>
             <details class="${groupClass(['scams.html', 'deepfakes.html', 'web-safety.html', 'social-mobile.html'])}">
               <summary class="nav-group-label">Safety Topics <span aria-hidden="true" class="nav-arrow">⌄</span></summary>
               <div class="nav-dropdown">
