@@ -10,7 +10,7 @@
 
     header.outerHTML = `
       <div class="site-banner" id="top">
-        <a href="index.html"><img alt="Click with Confidence — Online Safety for Seniors in the Digital Age" src="images/CickWithConfidenceBanner.png"/></a>
+        <a href="index.html"><img alt="Click with Confidence — Online Safety for Seniors in the Digital Age" src="images/banner.jpg"/></a>
       </div>
       <header class="site-header">
         <div class="nav-shell">
@@ -35,7 +35,7 @@
               </div>
             </details>
             <a${pageAttribute('get-help.html')} href="get-help.html">Get Help</a>
-            <a${pageAttribute('gold-award.html')} href="gold-award.html">Gold Award</a>
+            <a${pageAttribute('gold-award.html')} class="nav-gold-award" href="gold-award.html"><img alt="" class="nav-trefoil" src="images/girl-scout-logo-48.png"/>My Gold Award</a>
           </nav>
         </div>
       </header>`;

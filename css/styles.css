@@ -2459,3 +2459,51 @@ body:not(.inner-page) .lead { max-width: none; }
   background: var(--teal-soft);
   box-shadow: none;
 }
+
+/* Opening statement on the home page. */
+.intro-box {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin: 0 0 26px;
+  padding: 26px 28px;
+  background: #f1f8f3;
+  border: 1px solid #b7d8c3;
+  border-left: 8px solid #00843d;
+}
+.intro-emblem {
+  width: 88px;
+  height: auto;
+  flex: 0 0 auto;
+}
+.intro-text {
+  margin: 0;
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  font-size: 1.35rem;
+  line-height: 1.5;
+  color: #1c4a2e;
+}
+@media (max-width: 680px) {
+  .intro-box {
+    display: block;
+    padding: 20px;
+    border-left-width: 6px;
+  }
+  .intro-emblem { width: 64px; margin-bottom: 12px; }
+  .intro-text { font-size: 1.15rem; }
+}
+
+/* Trefoil beside the Gold Award menu item. */
+.nav-gold-award {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.nav-trefoil {
+  width: 20px;
+  height: auto;
+  flex: 0 0 auto;
+}
+@media (max-width: 900px) {
+  .nav-gold-award { justify-content: flex-start; }
+}
