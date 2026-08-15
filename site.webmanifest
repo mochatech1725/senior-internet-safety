@@ -1,0 +1,12 @@
+{
+  "name": "Click with Confidence: Online Safety for Seniors in the Digital Age",
+  "short_name": "Click with Confidence",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#fffefa",
+  "background_color": "#fffefa",
+  "display": "browser",
+  "start_url": "index.html"
+}
