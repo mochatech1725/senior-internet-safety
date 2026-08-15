@@ -48,7 +48,7 @@
     footer.outerHTML = `
       <footer class="site-footer">
         <div class="shell footer-grid">
-          <div><p class="footer-small">A Girl Scout Gold Award project.</p></div>
+          <div><p class="footer-small">A Girl Scout Gold Award Project</p></div>
           <div class="footer-links"><a href="#top">Back to top ↑</a><button id="print-page" type="button">Print this page</button></div>
         </div>
       </footer>`;
